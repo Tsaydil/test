@@ -1,4 +1,4 @@
-import {slackAuthFunction, teamsAuthFunction} from "./auth/auth";
+import {slackAuthFunction, teamsAuthFunction} from "../auth/auth";
 import {Client} from "./Client";
 //const getTokenSlack = require('./auth/getTokenSlack.js');
 

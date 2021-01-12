@@ -3,7 +3,7 @@
 const dotenv = require('dotenv')
 //const {WebClient} = require('@slack/web-api');
 import { WebClient, WebAPICallResult } from '@slack/web-api';
-import { ChatManager } from "./ChatManager";
+import { ChatManager } from "./classes/ChatManager";
 const axios = require('axios');
 //const getTokenSlack = require('./auth/getTokenSlack');
 

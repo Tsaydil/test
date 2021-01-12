@@ -3,7 +3,7 @@ require('dotenv').config();
 //import request from 'request';
 //import axios from "axios";
 //const Client = require("../Client");
-import {Client} from "../Client";
+import {Client} from "../classes/Client";
 
 
 const getTokenSlack = async (server: any, url: any) => {
