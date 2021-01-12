@@ -1,6 +1,6 @@
 'use strict';
 var expect = require('chai').expect;
-var index = require('../dist/index.js');
+var index = require('../index.js');
 describe('getTest function test', () => {
     it('should return testtest', () => {
         var result = index.getTest('test');
