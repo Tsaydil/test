@@ -157,5 +157,7 @@ export function testChatManager () {
     testFunc(chatManObj.web);
 }
 
+module.exports = require('./classes/ChatManager');
+
 
 
