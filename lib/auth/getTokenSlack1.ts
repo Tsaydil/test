@@ -1,6 +1,9 @@
 require('dotenv').config();
-const request = require("request");
-const Client = require("../Client");
+//const request = require("request");
+//import request from 'request';
+//import axios from "axios";
+//const Client = require("../Client");
+import {Client} from "../Client";
 
 
 const getTokenSlack = async (server: any, url: any) => {
@@ -14,9 +17,9 @@ const getTokenSlack = async (server: any, url: any) => {
                 client_secret: process.env.SLACK_CLIENT_SECRET,
                 code: req.query.code
             }};
-        //console.log(data);
+        console.log(data);
         //testPost(data);
-        request.post('https://slack.com/api/oauth.v2.access', data, function (error: any, response: any, body: any){
+        /*axios.post('https://slack.com/api/oauth.v2.access', data, function (error: any, response: any, body: any){
             if (!error && response.statusCode == 200) {
                 // Get an auth token
                 let user = JSON.parse(body).authed_user;
@@ -29,7 +32,7 @@ const getTokenSlack = async (server: any, url: any) => {
                 res.send(new_client);
                 //console.log(typeof oauthToken);
             }
-        });
+        });*/
     });
 
 
